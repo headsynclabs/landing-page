@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
 * {
     /* #100818 no-repeat */
-    overflow: hidden;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -14,7 +13,6 @@ body {
     background-attachment: fixed;
     background-position: 10% 10%;
     background-size: cover;
-    back
 }
 nav {
     font-family: 'IBM Plex Sans', sans-serif !important;
@@ -32,7 +30,7 @@ a:hover {
 .text-title {
     font-family: 'IBM Plex Serif', serif;
     font-style: italic;
-    font-size: 53px;
+    font-size: 50px;
     color: #ffa500;
     font-weight: 700 !important;
 }
@@ -48,5 +46,33 @@ a:hover {
 }
 footer {
     font-weight: 700;
+}
 
+#typewriter {
+        font-style: italic;
+        color: #ffa500;
+		margin: 0;
+        font-family: 'IBM Plex Serif', serif;
+        font-size: 40px;
+        font-weight: 700;
+
+		&:after{
+			content: "|";
+			animation: blink 100ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }

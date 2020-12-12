@@ -10,19 +10,139 @@
 </head>
 <body>
 
-    <!-- Content -->
-    <div class="row content">
-        <div class="container pt-5">
-            <div class="col-sm-12 col-md-12 pt-5">
-                <div class="text-left pt-5">
-                    <h1 class="text-title">We've principles in empowering community. You in?</h1>
-                    <p class="text-description">
-                    IF YOU WANNA KNOW HOW, CLICK <a href="http://github.com/headsynclabs">HERE</a>.
+
+    <div class="container pt-2">
+        <nav class="navbar navbar-expand-lg navbar-light text-uppercase pt-3">
+            <a class="navbar-brand text-white" href="https://headsynclabs.vercel.app">headsynclabs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto text-uppercase text-white">
+                <li class="navbar-text nav-item">
+                    <a class="nav-link text-white" href="#">Tentang</a>
+                </li>
+                <li class="navbar-text nav-item">
+                    <a class="nav-link text-white" href="#">Etos</a>
+                </li>
+                <li class="navbar-text nav-item">
+                    <a class="nav-link text-white" href="#">kiprah</a>
+                </li>
+                <li class="navbar-text nav-item">
+                    <a class="nav-link text-white" href="#">dukung(an)</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+          <div class="container">
+            <div class="row pt-4">
+                <div class="col-md-12 col-xs-12 pt-5 float-left">
+                    <p class="text-title">
+                        We have principles in <br>
+                        empowering community. <br>
+                        You in? 
                     </p>
+                    <p class="text-description text-left text-white mt-2">
+                        if you wanna know how, click here.
+                    </p>
+                    <br>
+                    <p class="text-description pr-3 float-right text-left text-white mt-5">
+                        <a href="mailto:hello@headsynclabs.tech">hello@headsynclabs.tech</a>
+                    </p>
+                  </div>
+            </div>
+          </div>
+
+          <!-- <div class="row content px-5">
+            <div class="container pt-4">
+                <div class="col-sm-12 col-md-12 pt-5">
+                    <div class="text-left">
+                        <pre id="typewriter">
+                            <span class="var-highlight"></span>
+                                We have principles in
+                                empowering community.
+                                You in? 
+                        </pre>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
     </div>
+
+   
+
+
+    <!-- <script>
+        function setupTypewriter(t) {
+	    var HTML = t.innerHTML;
+	    t.innerHTML = "";
+
+	    var cursorPosition = 0,
+	        tag = "",
+	        writingTag = false,
+	        tagOpen = false,
+	        typeSpeed = 100,
+        tempTypeSpeed = 0;
+
+	    var type = function() {
+        
+	        if (writingTag === true) {
+	            tag += HTML[cursorPosition];
+	        }
+
+	        if (HTML[cursorPosition] === "<") {
+	            tempTypeSpeed = 0;
+	            if (tagOpen) {
+	                tagOpen = false;
+	                writingTag = true;
+	            } else {
+	                tag = "";
+	                tagOpen = true;
+	                writingTag = true;
+	                tag += HTML[cursorPosition];
+	            }
+	        }
+	        if (!writingTag && tagOpen) {
+	            tag.innerHTML += HTML[cursorPosition];
+	        }
+	        if (!writingTag && !tagOpen) {
+	            if (HTML[cursorPosition] === " ") {
+	                tempTypeSpeed = 0;
+	            }
+	            else {
+	                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+	            }
+	            t.innerHTML += HTML[cursorPosition];
+	        }
+	        if (writingTag === true && HTML[cursorPosition] === ">") {
+	            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+	            writingTag = false;
+	            if (tagOpen) {
+	                var newSpan = document.createElement("span");
+	                t.appendChild(newSpan);
+	                newSpan.innerHTML = tag;
+	                tag = newSpan.firstChild;
+	            }
+	        }
+
+	        cursorPosition += 1;
+	        if (cursorPosition < HTML.length - 1) {
+	            setTimeout(type, tempTypeSpeed);
+	        }
+
+	    };
+
+	    return {
+	        type: type
+	    };
+	}
+	    var typer = document.getElementById('typewriter');
+	    typewriter = setupTypewriter(typewriter);
+	    typewriter.type();
+    </script> -->
 
 </body>
 </html>
